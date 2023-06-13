@@ -8,13 +8,13 @@ a {
     text-decoration: none;
 }
 
+.pink_color {
+    color: #F16D7F;
+}
+
 .container {
     max-width: 1140px;
     margin: 0 auto;
-}
-
-.pink_color {
-    color: #F16D7F;
 }
 
 .header {
@@ -42,11 +42,6 @@ a {
     margin-bottom: 20px;
 }
 
-.main {
-    margin-left: 230px;
-    margin-right: 230px;
-}
-
 .represent {
     background: #F1E4E6;
     margin-bottom: 65px;
@@ -72,7 +67,7 @@ a {
 }
 
 .title {
-    width: 50%;
+    max-width: 100%;
     border-left: 12px solid #F16D7F;
     padding-left: 16px;
 }
@@ -93,6 +88,15 @@ a {
     font-size: 32px;
     line-height: 38px;
     color: #222222;
+}
+
+.title_text_pink {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    color: #F16D7F;
 }
 
 .main {
@@ -132,7 +136,12 @@ a {
     opacity: 30%;
 }
 
+.acc_small {
+    display: none;
+}
+
 .category_item-content {
+    width: 100%;
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -270,10 +279,6 @@ a {
 }
 
 @media (min-width: 768px) and (max-width: 1024px){
-    .container {
-        max-width: 736px;
-        margin: 0 auto;
-    }
 
     .navbar {
         padding-left: 32px;
@@ -306,7 +311,7 @@ a {
     }
 
     .title {
-        width: 50%;
+        max-width: 100%;
         border-left: 12px solid #F16D7F;
         padding-left: 16px;
         margin-right: 34px;
@@ -325,10 +330,193 @@ a {
     .categories {
         max-width: 736px;
     }
+
     .items_block {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 16px;
     }
 
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+
+    .navbar {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .login_link, .user_cart {
+        display: none;
+    }
+
+    .menu_list {
+        order: 3;
+    }
+
+    .represent_content {
+        flex-direction: column;
+        padding-top: 148px;
+        padding-bottom: 149px;
+    }
+
+    .title_img-box {
+        display: none;
+    }
+
+    .title_heading {
+        font-size: 38px;
+        font-weight: 900;
+        line-height: 45.6px;
+    }
+
+    .title_text {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 24px;
+    }
+
+    .categories {
+        margin-bottom: 64px;
+    }
+
+    .top_categories {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+        margin-bottom: 30px;
+    }
+
+    .category_item_container {
+        max-width: 100%;
+    }
+
+    .main {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    .category_item_container {
+        max-width: 320px;
+    }
+
+    .category_item-text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .category_item-heading {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .acc_big {
+        display: none;
+    }
+    
+    .acc_small {
+        display: flex;
+        max-width: 100%;
+        opacity: 30%;
+    }
+
+    .items_block {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 319px) {
+    body {
+        max-width: 319px;
+        overflow-x: visible;
+    }
+
+    .navbar {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .login_link, .user_cart {
+        display: none;
+    }
+
+    .menu_list {
+        order: 3;
+    }
+
+    .represent_content {
+        flex-direction: column;
+        padding-top: 148px;
+        padding-bottom: 149px;
+    }
+
+    .title_img-box {
+        display: none;
+    }
+
+    .title_heading {
+        font-size: 38px;
+        font-weight: 900;
+        line-height: 45.6px;
+    }
+
+    .title_text {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 24px;
+    }
+
+    .categories {
+        margin-bottom: 64px;
+    }
+
+    .top_categories {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+        margin-bottom: 30px;
+    }
+
+    .category_item_container {
+        max-width: 100%;
+    }
+
+    .main {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    .category_item_container {
+        max-width: 320px;
+    }
+
+    .category_item-text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .category_item-heading {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .acc_big {
+        display: none;
+    }
+    
+    .acc_small {
+        display: flex;
+        max-width: 100%;
+        opacity: 30%;
+    }
+
+    .items_block {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
