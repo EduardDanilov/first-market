@@ -506,6 +506,8 @@ ul {
 
 .social_icon {
     background-color: white;
+    width: 32px;
+    height: 32px;
 }
 
 .social_icon:hover {
