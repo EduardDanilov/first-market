@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="header">
+    <section class="header">
         <div class="container">
             <div class="navbar">
                 <div class="logo">
@@ -19,14 +19,53 @@
                     <img src="./img/find-icon.svg" alt="find">
                 </div>
                 <div class="menu">
-                    <a href="#" class="menu_list"><img src="./img/menu-icon.svg" alt="menu"></a>
+                    <details>
+                        <summary class="burger_menu"><img src="./img/menu-icon.svg" alt=""></summary>
+                        <div class="drop_menu">
+                            <h3 class="drop_menu_heading">
+                                MENU 
+                            </h3>
+                            <ul class="burger_menu_list">
+                                <li class="burger_menu_list-heading"><a href="#" class="list-heading-link">MAN</a></li>
+                                <li class="burger_menu_list-link-box">
+                                    <ul class="burger_menu_items">
+                                        <li class="item_link mb-11"><a href="#" class="menu_items-link">Accessories</a></li>
+                                        <li class="item_link mb-11"><a href="#" class="menu_items-link">Bags</a>
+                                        <li class="item_link mb-11"><a href="#" class="menu_items-link">Denim</a></li>
+                                        <li class="item_link mb-20"><a href="#" class="menu_items-link">T-Shirts</a></li>
+                                    </ul>
+                                </li>
+                                <li class="burger_menu_list-heading"><a href="#" class="list-heading-link">WOMAN</a></li>
+                                <li class="burger_menu_list-link-box">
+                                    <ul class="burger_menu_items">
+                                        <li class="item_link mb-11"><a href="#" class="menu_items-link">Accessories</a></li>
+                                        <li class="item_link mb-11"><a href="#" class="menu_items-link">Jackets &amp; Coats</a></li>
+                                        <li class="item_link mb-11"><a href="#" class="menu_items-link">Polos</a></li>
+                                        <li class="item_link mb-11"><a href="#" class="menu_items-link">T-Shirts</a></li>
+                                        <li class="item_link mb-20"><a href="#" class="menu_items-link">Shirts</a></li>
+                                    </ul>
+                                </li>
+                                <li class="burger_menu_list-heading"><a href="#" class="list-heading-link">KIDS</a></li>
+                                <li>
+                                    <ul class="burger_menu_items">
+                                        <li class="item_link mb-11"><a href="#" class="menu_items-link">Accessories</a></li>
+                                        <li class="item_link mb-11"><a href="#" class="menu_items-link">Jackets &amp; Coats</a></li>
+                                        <li class="item_link mb-11"><a href="#" class="menu_items-link">Polos</a></li>
+                                        <li class="item_link mb-11"><a href="#" class="menu_items-link">T-Shirts</a></li>
+                                        <li class="item_link mb-11"><a href="#" class="menu_items-link">Shirts</a></li>
+                                        <li class="item_link"><a href="#" class="menu_items-link">Bags</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </details>
                     <a href="#" class="login_link"><img src="./img/login-icon.svg" alt="login"></a>
                     <a href="#" class="user_cart"><img src="./img/cart-icon.svg" alt="cart"></a>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="represent">
+    </section>
+    <section class="represent">
         <div class="container">
             <div class="represent_content">
                 <div class="title_img-box">
@@ -39,15 +78,16 @@
                 </div>
             </div>
         </div>
-    </div>
-    <content class="main">
+    </section>
+    <section class="main">
             <div class="contaiter">
-                <div class="categories">
+                <section class="categories">
                     <div class="top_categories">
                         <div class="category_item_container">
                             <img src="./img/bg-for-women.png" alt="image" class="category_item-img">
                             <div class="category_item-content">
-                                <p class="category_item-text">30% OFF</p>
+                                <p class="category_item-text">30% OFF FOR WOMEN
+                                </p>
                                 <h3 class="category_item-heading pink_color">FOR WOMEN</h3>
                             </div> 
                         </div>
@@ -74,10 +114,10 @@
                             <h3 class="category_item-heading pink_color">ACCESORIES</h3>
                         </div> 
                     </div>
-                </div>
+                </section>
             </div>
             <div class="contaiter">                        
-                <div class="content_items">
+                <section class="content_items">
                     <div class="content_heading">
                         <h2 class="content_title">Fetured Items</h2>
                         <p class="content_text">Shop for items based on what we featured in this week</p>
@@ -168,11 +208,11 @@
                             <p class="cost">$52.00</p>
                         </div>
                     </div>
-                </div>
+                </section>
                 <div class="all_product_button"><a href="#" class="all_product_button-link">Browse All Product</a></div>   
         </div>
-    </content>
-    <div class="features">
+    </section>
+    <section class="features">
         <div class="container">
             <div class="feature_content">
                 <div class="feature_content_item">
@@ -192,8 +232,8 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="subscribe_block">
+    </section>
+    <section class="subscribe_block">
         <div class="container">
             <div class="subscribe_content">
                 <div class="subscribe_media">
@@ -207,16 +247,15 @@
                         </h4>
                         <p class="subscribe_button_text_content">FOR OUR NEWLETTER AND PROMOTION
                         </p>
-                        </div>
-                        <form action="" class="form">
+                    </div>
+                        <form action="#" class="form">
                             <input type="email" placeholder="Enter Your Email" class="form_input">
                             <button type="submit" class="form_button">Subscribe</button>
                         </form>
-                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <footer class="footer">
         <div class="container">
             <div class="footer_content">
