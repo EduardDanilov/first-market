@@ -1,0 +1,6 @@
+@import '_variables';
+
+@mixin center {
+    max-width: $siteMaxWidth;
+    margin: 0 auto;
+}
