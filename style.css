@@ -51,30 +51,37 @@
 }
 
 .product_description {
+  position: relative;
+  z-index: 2;
+  margin: -65px 0 129px 0;
+  display: flex;
+  justify-content: center;
+}
+.product_description_box {
   max-width: 1140px;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: white;
+  border: 1px solid #EAEAEA;
 }
-.product_description_title {
+.product_description_box_title {
   margin-top: 64.54px;
   margin-bottom: 12.1px;
   font-size: 14px;
   font-weight: 300;
   color: #F16D7F;
 }
-.product_description_deliver {
+.product_description_box_deliver {
   margin-bottom: 12.1px;
 }
-.product_description_header {
+.product_description_box_header {
   margin-bottom: 48.41px;
   color: #4D4D4D;
   font-size: 18px;
   font-weight: 300;
 }
-.product_description_text {
+.product_description_box_text {
   max-width: 555px;
   text-align: center;
   margin-bottom: 32.27px;
@@ -82,22 +89,22 @@
   font-size: 14px;
   font-weight: 300;
 }
-.product_description_price {
+.product_description_box_price {
   margin-bottom: 65px;
   font-size: 24px;
   font-weight: 300;
   color: #F16D7F;
 }
-.product_description_line {
+.product_description_box_line {
   margin-bottom: 65px;
 }
-.product_description_filter {
+.product_description_box_filter {
   margin-bottom: 48.41px;
   color: #6F6E6E;
   font-size: 14px;
   font-weight: 400;
 }
-.product_description_add-to-cart-box {
+.product_description_box_add-to-cart-box {
   margin-bottom: 64.5px;
   width: 212px;
   padding-top: 15px;
@@ -107,24 +114,24 @@
   justify-content: flex-start;
   border: 1px solid #F16D7F;
 }
-.product_description_add-to-cart-box .add-to-cart_image {
+.product_description_box_add-to-cart-box .add-to-cart_image {
   fill: #EF5B70;
   margin-left: 24px;
 }
-.product_description_add-to-cart-box .add-to-cart_text {
+.product_description_box_add-to-cart-box .add-to-cart_text {
   color: #F26376;
   font-size: 16px;
   font-weight: 400;
   margin-left: 23px;
 }
-.product_description_add-to-cart-box:hover {
+.product_description_box_add-to-cart-box:hover {
   border: 1px solid #F16D7F;
   background-color: #F16D7F;
 }
-.product_description_add-to-cart-box:hover .add-to-cart_image {
+.product_description_box_add-to-cart-box:hover .add-to-cart_image {
   fill: white;
 }
-.product_description_add-to-cart-box:hover .add-to-cart_text {
+.product_description_box_add-to-cart-box:hover .add-to-cart_text {
   color: white;
 }
 
