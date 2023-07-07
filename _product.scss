@@ -125,6 +125,40 @@
             color: #6F6E6E;
             font-size: 14px;
             font-weight: 400;
+            display: flex;
+            gap: 42px;
+
+            
+
+            .choose_color {
+                display: flex;
+                gap: 9px;
+                align-items: center;
+
+                &_checkbox-content {
+                    list-style: none;
+                }
+            }
+
+            .choose_size {
+                display: flex;
+                gap: 9px;
+                align-items: center;
+
+                &_checkbox-content {
+                    list-style: none;
+                }
+            }
+
+            .choose_quantity {
+                display: flex;
+                gap: 9px;
+                align-items: center;
+
+                &_checkbox-content {
+                    list-style: none;
+                }
+            }
         }
 
         &_add-to-cart-box {
@@ -163,4 +197,8 @@
             }
         }
     }
+}
+
+.product_cards {
+    margin-bottom: 128px !important;
 }
