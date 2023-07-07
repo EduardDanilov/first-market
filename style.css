@@ -110,25 +110,37 @@
   display: flex;
   gap: 9px;
   align-items: center;
+  position: relative;
 }
-.product_description_box_filter .choose_color_checkbox-content {
+.product_description_box_filter .choose_color_checkbox-name {
   list-style: none;
+}
+.product_description_box_filter .choose_color .choose_content {
+  position: absolute;
 }
 .product_description_box_filter .choose_size {
   display: flex;
   gap: 9px;
   align-items: center;
+  position: relative;
 }
-.product_description_box_filter .choose_size_checkbox-content {
+.product_description_box_filter .choose_size_checkbox-name {
   list-style: none;
+}
+.product_description_box_filter .choose_size .choose_content {
+  position: absolute;
 }
 .product_description_box_filter .choose_quantity {
   display: flex;
   gap: 9px;
   align-items: center;
+  position: relative;
 }
-.product_description_box_filter .choose_quantity_checkbox-content {
+.product_description_box_filter .choose_quantity_checkbox-name {
   list-style: none;
+}
+.product_description_box_filter .choose_quantity .choose_content {
+  position: absolute;
 }
 .product_description_box_add-to-cart-box {
   margin-bottom: 64.5px;

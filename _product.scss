@@ -134,9 +134,14 @@
                 display: flex;
                 gap: 9px;
                 align-items: center;
+                position: relative;
 
-                &_checkbox-content {
+                &_checkbox-name {
                     list-style: none;
+                }
+
+                .choose_content {
+                    position: absolute;
                 }
             }
 
@@ -144,9 +149,14 @@
                 display: flex;
                 gap: 9px;
                 align-items: center;
+                position: relative;
 
-                &_checkbox-content {
+                &_checkbox-name {
                     list-style: none;
+                }
+
+                .choose_content {
+                    position: absolute;
                 }
             }
 
@@ -154,9 +164,14 @@
                 display: flex;
                 gap: 9px;
                 align-items: center;
+                position: relative;
 
-                &_checkbox-content {
+                &_checkbox-name {
                     list-style: none;
+                }
+
+                .choose_content {
+                    position: absolute;
                 }
             }
         }
