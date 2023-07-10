@@ -128,8 +128,6 @@
             display: flex;
             gap: 42px;
 
-            
-
             .choose_color {
                 display: flex;
                 gap: 9px;
@@ -140,8 +138,34 @@
                     list-style: none;
                 }
 
-                .choose_content {
+                &_content {
                     position: absolute;
+                    padding-top: 7px;
+                    padding-bottom: 11px;
+                    padding-left: 9px;
+                    margin-top: 5px;
+                    background-color: white;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 6px;
+                    width: 103px;
+                    box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
+
+                    .checkbox_box {
+                        display: flex;
+
+                        .type-checkbox {
+                            margin-right: 10px;
+                        }
+
+                        .label_text {
+                            color: #6F6E6E;
+                            font-family: Roboto;
+                            font-size: 14px;
+                            font-weight: 400;
+                        }
+
+                    }
                 }
             }
 
@@ -155,8 +179,36 @@
                     list-style: none;
                 }
 
-                .choose_content {
+                &_content {
                     position: absolute;
+                    padding-top: 7px;
+                    padding-bottom: 11px;
+                    padding-left: 9px;
+                    margin-top: 5px;
+                    background-color: white;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 6px;
+                    width: 103px;
+                    box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
+
+                    .checkbox_box {
+                        display: flex;
+
+                        .type-checkbox {
+                            margin-right: 10px;
+                            border-radius: 0;
+                        }
+
+                        .label_text {
+                            color: #6F6E6E;
+                            font-family: Roboto;
+                            font-size: 14px;
+                            font-weight: 400;
+                        }
+
+                    }
+
                 }
             }
 
@@ -172,6 +224,14 @@
 
                 .choose_content {
                     position: absolute;
+                    margin-top: 5px;
+                    box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
+
+                    .quantity_input_box {
+                        #quantity {
+                            max-width: 50px;
+                        }
+                    }
                 }
             }
         }

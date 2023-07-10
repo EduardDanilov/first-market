@@ -115,8 +115,30 @@
 .product_description_box_filter .choose_color_checkbox-name {
   list-style: none;
 }
-.product_description_box_filter .choose_color .choose_content {
+.product_description_box_filter .choose_color_content {
   position: absolute;
+  padding-top: 7px;
+  padding-bottom: 11px;
+  padding-left: 9px;
+  margin-top: 5px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 103px;
+  box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
+}
+.product_description_box_filter .choose_color_content .checkbox_box {
+  display: flex;
+}
+.product_description_box_filter .choose_color_content .checkbox_box .type-checkbox {
+  margin-right: 10px;
+}
+.product_description_box_filter .choose_color_content .checkbox_box .label_text {
+  color: #6F6E6E;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
 }
 .product_description_box_filter .choose_size {
   display: flex;
@@ -127,8 +149,31 @@
 .product_description_box_filter .choose_size_checkbox-name {
   list-style: none;
 }
-.product_description_box_filter .choose_size .choose_content {
+.product_description_box_filter .choose_size_content {
   position: absolute;
+  padding-top: 7px;
+  padding-bottom: 11px;
+  padding-left: 9px;
+  margin-top: 5px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 103px;
+  box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
+}
+.product_description_box_filter .choose_size_content .checkbox_box {
+  display: flex;
+}
+.product_description_box_filter .choose_size_content .checkbox_box .type-checkbox {
+  margin-right: 10px;
+  border-radius: 0;
+}
+.product_description_box_filter .choose_size_content .checkbox_box .label_text {
+  color: #6F6E6E;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
 }
 .product_description_box_filter .choose_quantity {
   display: flex;
@@ -141,6 +186,11 @@
 }
 .product_description_box_filter .choose_quantity .choose_content {
   position: absolute;
+  margin-top: 5px;
+  box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
+}
+.product_description_box_filter .choose_quantity .choose_content .quantity_input_box #quantity {
+  max-width: 50px;
 }
 .product_description_box_add-to-cart-box {
   margin-bottom: 64.5px;

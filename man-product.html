@@ -9,6 +9,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Roboto&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -31,7 +35,7 @@
                             <li class="burger_menu_list-link-box">
                                 <ul class="burger_menu_items">
                                     <li class="item_link mb-11"><a href="#" class="menu_items-link">Accessories</a></li>
-                                    <li class="item_link mb-11"><a href="#" class="menu_items-link">Bags</a>
+                                    <li class="item_link mb-11"><a href="#" class="menu_items-link">Bags</a></li>
                                     <li class="item_link mb-11"><a href="#" class="menu_items-link">Denim</a></li>
                                     <li class="item_link mb-20"><a href="#" class="menu_items-link">T-Shirts</a></li>
                                 </ul>
@@ -77,7 +81,6 @@
             </div>
         </div>
     </div>
-
     <div class="slider">
         <div class="slider_arrow_box">
             <svg width="31" height="31" viewBox="0 0 31 31" xmlns="http://www.w3.org/2000/svg" class="slider_arrow">
@@ -96,7 +99,6 @@
             </svg>
         </div>
     </div>
-
     <div class="product_description">
         <div class="product_description_box">
             <h3 class="product_description_box_title">
@@ -119,15 +121,23 @@
             <div class="product_description_box_filter">
                 <div class="choose_color">
                     <details>
-                        <summary class="choose_color_checkbox-name">CHOISE COLOR</summary>
-                        <div class="choose_content">
-                            <div>
-                                <input type="checkbox" id="choise-color-red" name="color">
-                                <label for="choise-color-red">Red</label>
+                        <summary class="choose_color_checkbox-name">COLOR</summary>
+                        <div class="choose_color_content">
+                            <div class="checkbox_box">
+                                <input type="checkbox" id="choose-color-red" name="color" class="type-checkbox">
+                                <label for="choose-color-red" class="label_text">Red</label>
                             </div>
-                            <div>
-                                <input type="checkbox" id="choise-color-black" name="color">
-                                <label for="choise-color-black">Black</label>
+                            <div class="checkbox_box">
+                                <input type="checkbox" id="choose-color-black" name="color" class="type-checkbox">
+                                <label for="choose-color-black" class="label_text">Black</label>
+                            </div>
+                            <div class="checkbox_box">
+                                <input type="checkbox" id="choose-color-yellow" name="color" class="type-checkbox">
+                                <label for="choose-color-yellow" class="label_text">Yellow</label>
+                            </div>
+                            <div class="checkbox_box">
+                                <input type="checkbox" id="choose-color-green" name="color" class="type-checkbox">
+                                <label for="choose-color-green" class="label_text">Green</label>
                             </div>
                         </div>
                     </details>
@@ -140,15 +150,23 @@
 
                 <div class="choose_size">
                     <details>
-                        <summary class="choose_size_checkbox-name">CHOISE SIZE</summary>
-                        <div class="choose_content">
-                            <div>
-                                <input type="checkbox" id="choise-size-big" name="color">
-                                <label for="choise-size-big">Big</label>
+                        <summary class="choose_size_checkbox-name">SIZE</summary>
+                        <div class="choose_size_content">
+                            <div class="checkbox_box">
+                                <input type="checkbox" id="choose-size-l" name="color" class="type-checkbox">
+                                <label for="choose-size-l" class="label_text">L</label>
                             </div>
-                            <div>
-                                <input type="checkbox" id="choise-size-small" name="color">
-                                <label for="choise-size-small">Small</label>
+                            <div class="checkbox_box">
+                                <input type="checkbox" id="choose-size-m" name="color" class="type-checkbox">
+                                <label for="choose-size-m" class="label_text">M</label>
+                            </div>
+                            <div class="checkbox_box">
+                                <input type="checkbox" id="choose-size-xl" name="color" class="type-checkbox">
+                                <label for="choose-size-xl" class="label_text">XL</label>
+                            </div>
+                            <div class="checkbox_box">
+                                <input type="checkbox" id="choose-size-xxl" name="color" class="type-checkbox">
+                                <label for="choose-size-xxl" class="label_text">XXL</label>
                             </div>
                         </div>
                     </details>
@@ -157,13 +175,13 @@
                             d="M5.00214 5.64846C4.83521 5.64879 4.67343 5.59016 4.54488 5.48275L0.258102 1.88021C0.112196 1.75791 0.0204417 1.58217 0.00302325 1.39165C-0.0143952 1.20112 0.0439493 1.01143 0.165221 0.864289C0.286493 0.717149 0.460759 0.624619 0.649682 0.607053C0.838605 0.589487 1.02671 0.648325 1.17262 0.770623L5.00214 3.9985L8.83167 0.885905C8.90475 0.826055 8.98884 0.781361 9.0791 0.754391C9.16937 0.727421 9.26403 0.718707 9.35764 0.72875C9.45126 0.738794 9.54198 0.767396 9.6246 0.812913C9.70722 0.85843 9.7801 0.919965 9.83906 0.993981C9.90449 1.06806 9.95405 1.15498 9.98462 1.24927C10.0152 1.34357 10.0261 1.44321 10.0167 1.54197C10.0073 1.64073 9.97784 1.73646 9.93005 1.82318C9.88227 1.9099 9.81724 1.98573 9.73904 2.04592L5.45225 5.52598C5.32002 5.61641 5.16154 5.65954 5.00214 5.64846V5.64846Z"
                             fill="#6F6E6E" />
                     </svg>
-
                 </div>
+
                 <div class="choose_quantity">
                     <details>
-                        <summary class="choose_quantity_checkbox-name">CHOISE QUANTITY</summary>
+                        <summary class="choose_quantity_checkbox-name">QUANTITY</summary>
                         <div class="choose_content">
-                            <form>
+                            <form class="quantity_input_box">
                                 <input type="number" id="quantity">
                                 <label for="quantity"></label>
                             </form>
@@ -188,7 +206,6 @@
         </div>
 
     </div>
-
     <section class="main_content-items product_cards">
         <div class="product_block">
             <div class="item_box">
@@ -240,7 +257,6 @@
             </div>
         </div>
     </section>
-
     <section class="subscribe_block">
         <div class="subscribe_content">
             <div class="subscribe_media">
