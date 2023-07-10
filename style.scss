@@ -1,6 +1,7 @@
 @import '_variables';
 @import '_mixins';
 @import '_product';
+@import '_catalog';
 
 * {
     margin: 0;
@@ -19,6 +20,10 @@ a {
 
 ul {
     list-style-type: none;
+}
+
+summary {
+    list-style: none;
 }
 
 .mb-11 {

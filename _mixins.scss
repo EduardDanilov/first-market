@@ -4,3 +4,10 @@
     max-width: $siteMaxWidth;
     margin: 0 auto;
 }
+
+@mixin label-text-style {
+    color: #6F6E6E;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+}

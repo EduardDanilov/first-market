@@ -159,12 +159,8 @@
                         }
 
                         .label_text {
-                            color: #6F6E6E;
-                            font-family: Roboto;
-                            font-size: 14px;
-                            font-weight: 400;
+                            @include label-text-style;
                         }
-
                     }
                 }
             }
@@ -201,10 +197,7 @@
                         }
 
                         .label_text {
-                            color: #6F6E6E;
-                            font-family: Roboto;
-                            font-size: 14px;
-                            font-weight: 400;
+                            @include label-text-style;
                         }
 
                     }

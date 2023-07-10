@@ -1,0 +1,43 @@
+@import '_variables';
+@import '_mixins';
+
+
+.filter_box {
+    @include center;
+    display: flex;
+    align-items: center;
+    gap: 40%;
+
+    &__main_filter {
+
+    }
+
+    &_choose-items {
+        display: flex;
+        align-items: center;
+
+        .choose_item-trending {
+            display: flex;
+            align-items: center;
+    
+        }
+    
+        .choose_item-size {
+            display: flex;
+            align-items: center;
+    
+        }
+    
+        .choose_item-price {
+            display: flex;
+            align-items: center;
+    
+        }
+    }
+    
+    
+}
+
+.choose_item_checkbox_name {
+    @include label-text-style;
+}
