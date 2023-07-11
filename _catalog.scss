@@ -1,6 +1,10 @@
 @import '_variables';
 @import '_mixins';
 
+.filter_bottom {
+    margin-top: 51px !important;
+    margin-bottom: 65px !important;
+}
 
 .filter_box {
     @include center;
@@ -8,34 +12,83 @@
     align-items: center;
     gap: 40%;
 
-    &__main_filter {
+    &_main_filter {
+        position: relative;
 
+        &_content {
+            position: absolute;
+            z-index: 2;
+        }
     }
 
     &_choose-items {
         display: flex;
+        flex-direction: row;
         align-items: center;
 
-        .choose_item-trending {
+        .choose-items-block {
             display: flex;
-            align-items: center;
-    
-        }
-    
-        .choose_item-size {
-            display: flex;
-            align-items: center;
-    
-        }
-    
-        .choose_item-price {
-            display: flex;
-            align-items: center;
-    
+            
+            .choose_item-trending {
+                display: flex;
+                align-items: center;
+                position: relative;
+
+                .choose_trending_content {
+                    position: absolute;
+                    z-index: 3;
+                }
+            }
+
+            .choose_size {
+                display: flex;
+                gap: 9px;
+                align-items: center;
+                position: relative;
+
+                &_checkbox-name {
+                    list-style: none;
+                }
+
+                &_content {
+                    position: absolute;
+                    z-index: 3;
+                    padding-top: 7px;
+                    padding-bottom: 11px;
+                    padding-left: 9px;
+                    margin-top: 5px;
+                    background-color: white;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 6px;
+                    width: 103px;
+                    box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
+
+                    .checkbox_box {
+                        display: flex;
+
+                        .type-checkbox {
+                            margin-right: 10px;
+                            border-radius: 0;
+                        }
+
+                        .label_text {
+                            @include label-text-style;
+                        }
+
+                    }
+
+                }
+            }
+
+            .choose_item-price {
+                display: flex;
+                align-items: center;
+            }
         }
     }
-    
-    
+
+
 }
 
 .choose_item_checkbox_name {
