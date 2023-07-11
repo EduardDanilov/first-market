@@ -10,7 +10,7 @@
     @include center;
     display: flex;
     align-items: center;
-    gap: 40%;
+    gap: 35%;
 
     &_main_filter {
         position: relative;
@@ -27,22 +27,43 @@
         align-items: center;
 
         .choose-items-block {
+            @include checkbox-name-style;
             display: flex;
+            gap: 28px;
             
             .choose_item-trending {
                 display: flex;
                 align-items: center;
                 position: relative;
-
+                gap: 10px;
+                
                 .choose_trending_content {
                     position: absolute;
                     z-index: 3;
+                    padding-top: 7px;
+                    padding-bottom: 11px;
+                    padding-left: 9px;
+                    margin-top: 5px;
+                    background-color: white;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 6px;
+                    width: 103px;
+                    box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
+
+                    .checkbox_box {
+                        display: flex;
+                        gap: 9px;
+                    }
+                    .label_text {
+                        @include label-text-style;
+                    }
                 }
             }
 
             .choose_size {
                 display: flex;
-                gap: 9px;
+                gap: 10px;
                 align-items: center;
                 position: relative;
 
@@ -84,6 +105,41 @@
             .choose_item-price {
                 display: flex;
                 align-items: center;
+                gap: 10px;
+                position: relative;
+
+                .choose_content {
+                    position: absolute;
+                    z-index: 3;
+                    display: flex;
+                    gap: 25px;
+
+                    .choose_content_left_input_area {
+                        display: flex;
+                        align-items: center;
+                        height: 50px;
+                        gap: 7px;
+
+                        #left-input-area {
+                            width: 50px;
+                            height: 30px;
+                            gap: 20px;
+                        }
+                    }
+
+                    .choose_content_right_input_area {
+                        display: flex;
+                        align-items: center;
+                        height: 50px;
+                        gap: 7px;
+
+                        #right-input-area {
+                            width: 50px;
+                            height: 30px;
+                            gap: 20px;
+                        }
+                    }
+                }
             }
         }
     }

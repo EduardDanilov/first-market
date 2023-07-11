@@ -11,3 +11,12 @@
     font-size: 14px;
     font-weight: 400;
 }
+
+@mixin checkbox-name-style {
+    color: #6F6E6E;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
