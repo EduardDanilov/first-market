@@ -5,6 +5,15 @@
     margin: 0 auto;
 }
 
+@mixin card_price_info {
+    color: #575757;
+    font-family: Lato;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
 @mixin label-text-style {
     color: #6F6E6E;
     font-family: Roboto;
