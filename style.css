@@ -242,11 +242,61 @@
 .filter_box_main_filter {
   position: relative;
 }
-.filter_box_main_filter .main_filter_box {
+.filter_box_main_filter_name .filter_box_main_filter_text {
+  color: #6F6E6E;
+  font-family: Lato;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-right: 11px;
+}
+.filter_box .main_filter_box {
   position: absolute;
   z-index: 2;
   background-color: white;
-  width: 300px;
+  width: 360px;
+  margin-top: 16px;
+}
+.filter_box .main_filter_box .main_filter_category_name {
+  height: 37px;
+  border-left: 5px solid #EF5B70;
+  margin-bottom: 18px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: #6F6E6E;
+  font-family: Lato;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.filter_box .main_filter_box .main_filter_category_name .summary_text {
+  padding-left: 11px;
+  margin-bottom: 11.5px;
+}
+.filter_box .main_filter_box .main_filter_category_name:hover .summary_text {
+  color: #EF5B70;
+  cursor: pointer;
+}
+.filter_box .main_filter_box .category_item_body {
+  padding-left: 34px;
+  color: #6F6E6E;
+  font-family: Lato;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.filter_box .main_filter_box .category_item_body ul {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+.filter_box .main_filter_box .category_item_body ul li:last-child {
+  margin-bottom: 24px;
 }
 .filter_box_choose-items {
   display: flex;
@@ -363,12 +413,57 @@
   height: 30px;
   gap: 20px;
 }
-
-.choose_item_checkbox_name {
+.filter_box .choose_item_checkbox_name {
   color: #6F6E6E;
   font-family: Roboto;
   font-size: 14px;
   font-weight: 400;
+}
+
+.main_content-items .product_block {
+  margin-bottom: 48.5px;
+}
+
+.card_main_area {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.product_card {
+  width: 652px;
+  max-height: 306px;
+  display: flex;
+}
+
+.card_img_area {
+  width: 38.65%;
+}
+
+.card_img {
+  width: 100%;
+}
+
+.card_info {
+  display: flex;
+  flex-direction: column;
+}
+
+.info_area {
+  display: flex;
+  flex-direction: column;
+  max-width: 360px;
+}
+
+.shipping_info {
+  display: flex;
+  flex-direction: column;
+}
+
+.total_info {
+  display: flex;
+  flex-direction: column;
 }
 
 * {

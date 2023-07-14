@@ -1,6 +1,7 @@
 @import '_variables';
 @import '_mixins';
 
+
 .filter_bottom {
     margin-top: 51px !important;
     margin-bottom: 65px !important;
@@ -15,151 +16,212 @@
     &_main_filter {
         position: relative;
 
-        // &_content {
-        //     position: absolute;
-        //     z-index: 2;
-        // }
-
-
-
-        .main_filter_box {
-            position: absolute;
-            z-index: 2;
-            background-color: white;
-            width: 300px;
-
+        &_name {
             
+            .filter_box_main_filter_text {
+                color: #6F6E6E;
+                font-family: Lato;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                margin-right: 11px;
+            }
         }
-
-
+        
     }
 
-    &_choose-items {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
+    .main_filter_box {
+        position: absolute;
+        z-index: 2;
+        background-color: white;
+        width: 360px;
+        margin-top: 16px;
 
-        .choose-items-block {
-            @include checkbox-name-style;
+        .main_filter_category_name {
+            height: 37px;
+            border-left: 5px solid #EF5B70;
+            margin-bottom: 18px;
+
             display: flex;
-            gap: 28px;
-            
-            .choose_item-trending {
-                display: flex;
-                align-items: center;
-                position: relative;
-                gap: 10px;
-                
-                .choose_trending_content {
-                    position: absolute;
-                    z-index: 3;
-                    padding-top: 7px;
-                    padding-bottom: 11px;
-                    padding-left: 9px;
-                    margin-top: 5px;
-                    background-color: white;
-                    display: flex;
-                    flex-direction: column;
-                    gap: 6px;
-                    width: 110px;
-                    box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
+            align-items: flex-start;
+            flex-direction: column;
+            justify-content: flex-end;
 
-                    .checkbox_box {
-                        display: flex;
-                        gap: 9px;
+            color: #6F6E6E;
+            font-family: Lato;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+
+            .summary_text {
+                padding-left: 11px;
+                margin-bottom: 11.5px;
+            }
+        }
+
+        .main_filter_category_name:hover {
+            .summary_text {
+                color: $categoryTextColor;
+                cursor: pointer;
+            }
+        }
+
+        .category_item_body {
+            padding-left: 34px;
+            color: #6F6E6E;
+            font-family: Lato;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                gap: 11px;
+            }
+
+            ul li:last-child {
+                margin-bottom: 24px;
+            }
+        }
+    }
+// }
+
+&_choose-items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .choose-items-block {
+        @include checkbox-name-style;
+        display: flex;
+        gap: 28px;
+
+        .choose_item-trending {
+            display: flex;
+            align-items: center;
+            position: relative;
+            gap: 10px;
+
+            .choose_trending_content {
+                position: absolute;
+                z-index: 3;
+                padding-top: 7px;
+                padding-bottom: 11px;
+                padding-left: 9px;
+                margin-top: 5px;
+                background-color: white;
+                display: flex;
+                flex-direction: column;
+                gap: 6px;
+                width: 110px;
+                box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
+
+                .checkbox_box {
+                    display: flex;
+                    gap: 9px;
+                }
+
+                .label_text {
+                    @include label-text-style;
+                }
+            }
+        }
+
+        .choose_size {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            position: relative;
+
+            &_checkbox-name {
+                list-style: none;
+            }
+
+            &_content {
+                position: absolute;
+                z-index: 3;
+                padding-top: 7px;
+                padding-bottom: 11px;
+                padding-left: 9px;
+                margin-top: 5px;
+                background-color: white;
+                display: flex;
+                flex-direction: column;
+                gap: 6px;
+                width: 103px;
+                box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
+
+                .checkbox_box {
+                    display: flex;
+
+                    .type-checkbox {
+                        margin-right: 10px;
+                        border-radius: 0;
                     }
+
                     .label_text {
                         @include label-text-style;
                     }
+
                 }
+
             }
+        }
 
-            .choose_size {
+        .choose_item-price {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            position: relative;
+
+            .choose_content {
+                position: absolute;
+                z-index: 3;
                 display: flex;
-                gap: 10px;
-                align-items: center;
-                position: relative;
+                gap: 25px;
 
-                &_checkbox-name {
-                    list-style: none;
+                .choose_content_left_input_area {
+                    display: flex;
+                    align-items: center;
+                    height: 50px;
+                    gap: 7px;
+
+                    #left-input-area {
+                        width: 50px;
+                        height: 30px;
+                        gap: 20px;
+                    }
                 }
 
-                &_content {
-                    position: absolute;
-                    z-index: 3;
-                    padding-top: 7px;
-                    padding-bottom: 11px;
-                    padding-left: 9px;
-                    margin-top: 5px;
-                    background-color: white;
+                .choose_content_right_input_area {
                     display: flex;
-                    flex-direction: column;
-                    gap: 6px;
-                    width: 103px;
-                    box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
+                    align-items: center;
+                    height: 50px;
+                    gap: 7px;
 
-                    .checkbox_box {
-                        display: flex;
-
-                        .type-checkbox {
-                            margin-right: 10px;
-                            border-radius: 0;
-                        }
-
-                        .label_text {
-                            @include label-text-style;
-                        }
-
-                    }
-
-                }
-            }
-
-            .choose_item-price {
-                display: flex;
-                align-items: center;
-                gap: 10px;
-                position: relative;
-
-                .choose_content {
-                    position: absolute;
-                    z-index: 3;
-                    display: flex;
-                    gap: 25px;
-
-                    .choose_content_left_input_area {
-                        display: flex;
-                        align-items: center;
-                        height: 50px;
-                        gap: 7px;
-
-                        #left-input-area {
-                            width: 50px;
-                            height: 30px;
-                            gap: 20px;
-                        }
-                    }
-
-                    .choose_content_right_input_area {
-                        display: flex;
-                        align-items: center;
-                        height: 50px;
-                        gap: 7px;
-
-                        #right-input-area {
-                            width: 50px;
-                            height: 30px;
-                            gap: 20px;
-                        }
+                    #right-input-area {
+                        width: 50px;
+                        height: 30px;
+                        gap: 20px;
                     }
                 }
             }
         }
     }
-
-
 }
 
 .choose_item_checkbox_name {
     @include label-text-style;
+}
+}
+
+.main_content-items {
+    .product_block {
+        margin-bottom: 48.5px;
+
+    }
 }

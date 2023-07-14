@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Roboto&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header_navbar">
+            <div class="logo">
+                <a href="index.html"><img src="./img/site-logo.svg" alt="logo"></a>
+                <img src="./img/find-icon.svg" alt="find">
+            </div>
+            <div class="menu">
+                <details>
+                    <summary class="burger_menu"><img src="./img/menu-icon.svg" alt=""></summary>
+                    <div class="drop_menu">
+                        <h3 class="drop_menu_heading">
+                            MENU
+                        </h3>
+                        <ul class="burger_menu_list">
+                            <li class="burger_menu_list-heading"><a href="ca" class="list-heading-link">MAN</a></li>
+                            <li class="burger_menu_list-link-box">
+                                <ul class="burger_menu_items">
+                                    <li class="item_link mb-11"><a href="#" class="menu_items-link">Accessories</a></li>
+                                    <li class="item_link mb-11"><a href="#" class="menu_items-link">Bags</a></li>
+                                    <li class="item_link mb-11"><a href="#" class="menu_items-link">Denim</a></li>
+                                    <li class="item_link mb-20"><a href="#" class="menu_items-link">T-Shirts</a></li>
+                                </ul>
+                            </li>
+                            <li class="burger_menu_list-heading"><a href="#" class="list-heading-link">WOMAN</a></li>
+                            <li class="burger_menu_list-link-box">
+                                <ul class="burger_menu_items">
+                                    <li class="item_link mb-11"><a href="#" class="menu_items-link">Accessories</a></li>
+                                    <li class="item_link mb-11"><a href="#" class="menu_items-link">Jackets &amp;
+                                            Coats</a></li>
+                                    <li class="item_link mb-11"><a href="#" class="menu_items-link">Polos</a></li>
+                                    <li class="item_link mb-11"><a href="#" class="menu_items-link">T-Shirts</a></li>
+                                    <li class="item_link mb-20"><a href="#" class="menu_items-link">Shirts</a></li>
+                                </ul>
+                            </li>
+                            <li class="burger_menu_list-heading"><a href="#" class="list-heading-link">KIDS</a></li>
+                            <li>
+                                <ul class="burger_menu_items">
+                                    <li class="item_link mb-11"><a href="#" class="menu_items-link">Accessories</a></li>
+                                    <li class="item_link mb-11"><a href="#" class="menu_items-link">Jackets &amp;
+                                            Coats</a></li>
+                                    <li class="item_link mb-11"><a href="#" class="menu_items-link">Polos</a></li>
+                                    <li class="item_link mb-11"><a href="#" class="menu_items-link">T-Shirts</a></li>
+                                    <li class="item_link mb-11"><a href="#" class="menu_items-link">Shirts</a></li>
+                                    <li class="item_link"><a href="#" class="menu_items-link">Bags</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </details>
+                <a href="#" class="login_link"><img src="./img/login-icon.svg" alt="login"></a>
+                <a href="#" class="user_cart"><img src="./img/cart-icon.svg" alt="cart"></a>
+            </div>
+        </div>
+    </header>
+    <div class="page_navigation">
+        <div class="page_navigation_area">
+            <h2 class="page_navigation_area-title">SHOPPING CART</h2>
+        </div>
+    </div>
+    <div class="card_main_area">
+        <div class="cards_area">
+            <div class="cards_box">
+                <div class="product_card">
+                    <div class="card_img_area">
+                        <img src="./img/photo-man-2.png" alt="image" class="card_img">
+                    </div>
+                    <div class="card_info">
+                        <h3 class="card_title">MANGO PEOPLE T-SHIRT</h3>
+                        <div class="card_info_block">
+                            <p class="card_info_price">
+                                <span class="price-heading">Price</span>
+                                <span class="price-count">&dollar;300</span>
+                            </p>
+                            <p class="card_info_price">
+                                <span class="price-heading">Size</span>
+                                <span class="price-size">Xl</span>
+                            </p>
+                            <p class="card_info_price">
+                                <span class="price-heading">Quantity</span>
+                            <div class="price-quantity">
+                                <input type="number" id="price-quantity-input">
+                            </div>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="function_buttons">
+                <button type="reset">CLEAR SHOPPING CART</button>
+                <button type="button">CONTINUE SHOPPING</button>
+            </div>
+        </div>
+        <div class="info_area">
+            <div class="shipping_info">
+                <h3 class="shipping_title">SHIPPING ADRESS</h3>
+                <input type="text" name="" id="">
+                <input type="text" name="" id="">
+                <input type="text" name="" id="">
+                <button type="button"></button>
+            </div>
+            <div class="total_info">
+                <p class="total_subtotal">
+                    <span class="subtotal_text">SUB TOTAL</span>
+                    <span class="subtotal_price">&dollar;900</span>
+                </p>
+                <p class="total_grandtotal">
+                    <span class="grandtotal_text">SUB TOTAL</span>
+                    <span class="grandtotal_price">&dollar;900</span>
+                    <svg width="275" height="1" viewBox="0 0 275 1" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M275 0H0V1H275V0Z" />
+                    </svg>
+                    <button type="button">PROCEED TO CHECKOUT</button>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <section class="subscribe_block">
+        <div class="subscribe_content">
+            <div class="subscribe_media">
+                <img src="./img/subscribe_woman_photo.png" alt="image" class="subscribe_media_img">
+                <p class="subscribe_media_text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar
+                    purus condimentum“</p>
+            </div>
+            <div class="subscribe_button">
+                <div class="subscribe_button_text">
+                    <h4 class="subscribe_button_text_title">
+                        SUBSCRIBE
+                    </h4>
+                    <p class="subscribe_button_text_content">FOR OUR NEWLETTER AND PROMOTION
+                    </p>
+                </div>
+                <form action="#" class="form">
+                    <input type="email" placeholder="Enter Your Email" class="form_input">
+                    <button type="submit" class="form_button">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer_content">
+            <div class="footer_text">
+                &copy; 2022 Brand All Rights Reserved.
+            </div>
+            <div class="footer_icons">
+                <a href="#">
+                    <div class="social_icon"><img src="./img/facebook_icon.svg" alt="facebook" class="facebook_icon">
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="social_icon"><img src="./img/instagram_icon.svg" alt="instagram"
+                            class="instagram_icon social_icon"></div>
+                </a>
+                <a href="#">
+                    <div class="social_icon"><img src="./img/pinterest_icon.svg" alt="instagram"
+                            class="pinterest_icon social_icon"></div>
+                </a>
+                <a href="#">
+                    <div class="social_icon"><img src="./img/twitter_icon.svg" alt="instagram"
+                            class="twitter_icon social_icon"></div>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

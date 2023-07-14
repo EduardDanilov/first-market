@@ -1,0 +1,46 @@
+@import '_variables';
+@import '_mixins';
+
+.card_main_area {
+    @include center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.product_card {
+    width: 652px;
+    max-height: 306px;
+    display: flex;
+}
+
+.card_img_area {
+    width: 38.65%;
+}
+
+.card_img {
+    width: 100%;
+}
+
+.card_info {
+    display: flex;
+    flex-direction: column;
+}
+
+.info_area {
+    display: flex;
+    flex-direction: column;
+    max-width: 360px;
+}
+
+.shipping_info {
+    display: flex;
+    flex-direction: column;
+}
+
+.total_info {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
