@@ -430,6 +430,7 @@
   margin-top: 96px;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 128px;
 }
 
 .cards_box {
@@ -522,7 +523,7 @@
 .info_area {
   display: flex;
   flex-direction: column;
-  max-width: 360px;
+  width: 360px;
 }
 
 .delete-card-button {
@@ -559,6 +560,7 @@
   display: flex;
   flex-direction: column;
   margin-top: 17px;
+  margin-bottom: 57px;
 }
 
 .shipping_title {
@@ -619,6 +621,74 @@
 .total_info {
   display: flex;
   flex-direction: column;
+  background-color: #F5F3F3;
+  padding-top: 39px;
+}
+
+.total_subtotal {
+  margin-right: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 25px;
+  color: #4A4A4A;
+  font-family: Lato;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.total_grandtotal {
+  margin-right: 37px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 26px;
+  margin-bottom: 12px;
+  margin-bottom: 21px;
+}
+
+.grandtotal_text {
+  color: #222;
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.grandtotal_price {
+  color: #F16D7F;
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.total_line_img {
+  fill: #E2E2E2;
+  margin-bottom: 17px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.total_proceed_button {
+  width: 273px;
+  background-color: #F16D7F;
+  color: #FFF;
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  border: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 42px;
 }
 
 * {
