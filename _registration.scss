@@ -1,0 +1,128 @@
+@import '_variables';
+@import '_mixins';
+
+// Форма регистрации
+.registration_area {
+    @include center;
+    display: flex;
+    gap: 128px;
+    padding-top: 64px;
+    padding-bottom: 96px;
+
+    &_forms {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.registration_input-box {
+    @include input_form;
+}
+
+.registration_person_title {
+    color: #222;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+
+.registration_form_input_block-person {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 31px;
+}
+
+.registration_gender-form {
+    margin-bottom: 33px;
+    .registration_gender-input {
+        margin-right: 10px; 
+    }
+    .registration_gender-input-text {
+        margin-right: 20px;
+    }
+}
+
+.registration_login_title {
+    color: #222;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+
+.registration_form_input_block-login {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+.registration_form_conditions {
+    color: #B1B1B1;
+    font-family: Lato;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-bottom: 39px;
+}
+
+
+.registration_button {
+    border: none;
+    .registration_button_content {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        background-color: $pinkColor;
+        padding: 16px 29px;
+        
+        &_text {
+            color: #FFF;
+            font-family: Lato;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+        &_img {
+            fill: #FFF;
+        }
+    }
+}
+
+// Описание
+.registration_area_text-title, .registration_area_text-description {
+    margin-bottom: 22px;
+    color: $colorDark;
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.registration_area_text-list-box {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    li {
+        display: flex;
+        align-items: center;
+        gap: 23px;
+
+        color: $colorDark;
+        font-family: Lato;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+}
