@@ -38,11 +38,19 @@
 
 .registration_gender-form {
     margin-bottom: 33px;
+
     .registration_gender-input {
-        margin-right: 10px; 
+        margin-right: 10px;
     }
+
     .registration_gender-input-text {
         margin-right: 20px;
+        color: #000;
+        font-family: Lato;
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
     }
 }
 
@@ -76,13 +84,14 @@
 
 .registration_button {
     border: none;
+
     .registration_button_content {
         display: flex;
         align-items: center;
         gap: 20px;
         background-color: $pinkColor;
         padding: 16px 29px;
-        
+
         &_text {
             color: #FFF;
             font-family: Lato;
@@ -99,7 +108,8 @@
 }
 
 // Описание
-.registration_area_text-title, .registration_area_text-description {
+.registration_area_text-title,
+.registration_area_text-description {
     margin-bottom: 22px;
     color: $colorDark;
     font-family: Lato;

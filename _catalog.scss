@@ -2,22 +2,19 @@
 @import '_mixins';
 
 
-.filter_bottom {
-    margin-top: 51px !important;
-    margin-bottom: 65px !important;
-}
-
 .filter_box {
     @include center;
     display: flex;
     align-items: center;
     gap: 35%;
+    margin-top: 51px;
+    margin-bottom: 65px;
 
     &_main_filter {
         position: relative;
 
         &_name {
-            
+
             .filter_box_main_filter_text {
                 color: #6F6E6E;
                 font-family: Lato;
@@ -28,7 +25,6 @@
                 margin-right: 11px;
             }
         }
-        
     }
 
     .main_filter_box {
@@ -88,140 +84,185 @@
             }
         }
     }
-// }
 
-&_choose-items {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    // }
 
-    .choose-items-block {
-        @include checkbox-name-style;
+    &_choose-items {
         display: flex;
-        gap: 28px;
+        flex-direction: row;
+        align-items: center;
 
-        .choose_item-trending {
+        .choose-items-block {
+            @include checkbox-name-style;
             display: flex;
-            align-items: center;
-            position: relative;
-            gap: 10px;
+            gap: 28px;
 
-            .choose_trending_content {
-                position: absolute;
-                z-index: 3;
-                padding-top: 7px;
-                padding-bottom: 11px;
-                padding-left: 9px;
-                margin-top: 5px;
-                background-color: white;
+            .choose_item-trending {
                 display: flex;
-                flex-direction: column;
-                gap: 6px;
-                width: 110px;
-                box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
+                align-items: center;
+                position: relative;
+                gap: 10px;
 
-                .checkbox_box {
+                .choose_trending_content {
+                    position: absolute;
+                    z-index: 3;
+                    padding-top: 7px;
+                    padding-bottom: 11px;
+                    padding-left: 9px;
+                    margin-top: 5px;
+                    background-color: white;
                     display: flex;
-                    gap: 9px;
-                }
+                    flex-direction: column;
+                    gap: 6px;
+                    width: 110px;
+                    box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
 
-                .label_text {
-                    @include label-text-style;
-                }
-            }
-        }
-
-        .choose_size {
-            display: flex;
-            gap: 10px;
-            align-items: center;
-            position: relative;
-
-            &_checkbox-name {
-                list-style: none;
-            }
-
-            &_content {
-                position: absolute;
-                z-index: 3;
-                padding-top: 7px;
-                padding-bottom: 11px;
-                padding-left: 9px;
-                margin-top: 5px;
-                background-color: white;
-                display: flex;
-                flex-direction: column;
-                gap: 6px;
-                width: 103px;
-                box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
-
-                .checkbox_box {
-                    display: flex;
-
-                    .type-checkbox {
-                        margin-right: 10px;
-                        border-radius: 0;
+                    .checkbox_box {
+                        display: flex;
+                        gap: 9px;
                     }
 
                     .label_text {
                         @include label-text-style;
                     }
-
                 }
-
             }
-        }
 
-        .choose_item-price {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            position: relative;
-
-            .choose_content {
-                position: absolute;
-                z-index: 3;
+            .choose_size {
                 display: flex;
-                gap: 25px;
+                gap: 10px;
+                align-items: center;
+                position: relative;
 
-                .choose_content_left_input_area {
-                    display: flex;
-                    align-items: center;
-                    height: 50px;
-                    gap: 7px;
-
-                    #left-input-area {
-                        width: 50px;
-                        height: 30px;
-                        gap: 20px;
-                    }
+                &_checkbox-name {
+                    list-style: none;
                 }
 
-                .choose_content_right_input_area {
+                &_content {
+                    position: absolute;
+                    z-index: 3;
+                    padding-top: 7px;
+                    padding-bottom: 11px;
+                    padding-left: 9px;
+                    margin-top: 5px;
+                    background-color: white;
                     display: flex;
-                    align-items: center;
-                    height: 50px;
-                    gap: 7px;
+                    flex-direction: column;
+                    gap: 6px;
+                    width: 103px;
+                    box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
 
-                    #right-input-area {
-                        width: 50px;
-                        height: 30px;
-                        gap: 20px;
+                    .checkbox_box {
+                        display: flex;
+
+                        .type-checkbox {
+                            margin-right: 10px;
+                            border-radius: 0;
+                        }
+
+                        .label_text {
+                            @include label-text-style;
+                        }
+
+                    }
+
+                }
+            }
+
+            .choose_item-price {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                position: relative;
+
+                .choose_content {
+                    position: absolute;
+                    z-index: 3;
+                    display: flex;
+                    gap: 25px;
+
+                    .choose_content_left_input_area {
+                        display: flex;
+                        align-items: center;
+                        height: 50px;
+                        gap: 7px;
+
+                        #left-input-area {
+                            width: 50px;
+                            height: 30px;
+                            gap: 20px;
+                        }
+                    }
+
+                    .choose_content_right_input_area {
+                        display: flex;
+                        align-items: center;
+                        height: 50px;
+                        gap: 7px;
+
+                        #right-input-area {
+                            width: 50px;
+                            height: 30px;
+                            gap: 20px;
+                        }
                     }
                 }
             }
         }
     }
+
+    .choose_item_checkbox_name {
+        @include label-text-style;
+    }
 }
 
-.choose_item_checkbox_name {
-    @include label-text-style;
-}
+.main_page_content-goods {
+    @include center;
+    margin-bottom: 49px;
 }
 
-.main_content-items {
-    .product_block {
-        margin-bottom: 48.5px;
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 96px;
 
+    &_content {
+        display: flex;
+        justify-content: center;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        border: 1px solid #EBEBEB;;
+        width: max-content;
+
+        &_arrow {
+            width: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &_arrow:hover {
+            cursor: pointer;
+            fill: $categoryTextColor;
+        }
+
+        &_numbers {
+            display: flex;
+            gap: 20px;
+
+            .pagination_numbers_item {
+                color: #C4C4C4;
+                font-family: Lato;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
+            }
+
+            .pagination_numbers_item:hover {
+                cursor: pointer;
+                color: $categoryTextColor;
+            }
+        }
     }
 }
