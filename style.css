@@ -1272,10 +1272,13 @@
     width: 100%;
   }
   .registration_area {
+    margin-left: 9px;
+    margin-right: 9px;
     flex-direction: column;
   }
   .registration_input-box {
     width: 100%;
+    max-width: 360px;
   }
 }
 * {
