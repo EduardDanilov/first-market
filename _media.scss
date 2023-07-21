@@ -407,6 +407,14 @@
     }
 
     .filter_box {
+
+        .main_filter_box {
+            width: 300px;
+        }
+
+        .main_filter_category_border-line {
+            width: 200px;
+        }
         .choose_item_checkbox_name {
             font-size: 12px;
         }
@@ -425,6 +433,10 @@
 
                 .choose_item-price {
                     gap: 9px;
+
+                    .choose_content {
+                        right: 0;
+                    }
                 }
             }
         }

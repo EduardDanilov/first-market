@@ -1163,6 +1163,12 @@
   .filter-svg-img {
     transform: scale(2.5);
   }
+  .filter_box .main_filter_box {
+    width: 300px;
+  }
+  .filter_box .main_filter_category_border-line {
+    width: 200px;
+  }
   .filter_box .choose_item_checkbox_name {
     font-size: 12px;
   }
@@ -1177,6 +1183,9 @@
   }
   .filter_box .filter_box_choose-items .choose-items-block .choose_item-price {
     gap: 9px;
+  }
+  .filter_box .filter_box_choose-items .choose-items-block .choose_item-price .choose_content {
+    right: 0;
   }
   .product_description_box_line {
     width: 175px;
